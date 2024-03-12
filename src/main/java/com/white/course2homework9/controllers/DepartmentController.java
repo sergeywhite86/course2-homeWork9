@@ -20,13 +20,13 @@ public class DepartmentController {
     private final DepartmentService service;
 
     @GetMapping("/max-salary")
-    public Employee EmpWithMaxSalaryByDepartment(@RequestParam int departmentId) {
-        return service.EmpWithMaxSalaryByDepartment(departmentId);
+    public Employee empWithMaxSalaryByDepartment(@RequestParam int departmentId) {
+        return service.empWithMaxSalaryByDepartment(departmentId);
     }
 
     @GetMapping("min-salary")
-    public Employee EmpWithMinSalaryByDepartment(@RequestParam int departmentId) {
-        return service.EmpWithMinSalaryByDepartment(departmentId);
+    public Employee empWithMinSalaryByDepartment(@RequestParam int departmentId) {
+        return service.empWithMinSalaryByDepartment(departmentId);
     }
 
     @GetMapping("/all")

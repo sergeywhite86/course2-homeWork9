@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Map;
 
 public interface DepartmentService {
-    Employee EmpWithMaxSalaryByDepartment(int departmentNumber);
+    Employee empWithMaxSalaryByDepartment(int departmentNumber);
 
-    Employee EmpWithMinSalaryByDepartment(int departmentNumber);
+    Employee empWithMinSalaryByDepartment(int departmentNumber);
 
     List<Employee> findAllByDepartment(int departmentNumber);
 

@@ -19,7 +19,7 @@ public class DepartmentServiceImpl implements DepartmentService {
 
 
     @Override
-    public Employee EmpWithMaxSalaryByDepartment(int departmentNumber) {
+    public Employee empWithMaxSalaryByDepartment(int departmentNumber) {
         Department department = getDepartmentByNumber(departmentNumber);
         return repository.findAll().stream()
                 .filter(e -> e.getDepartment().equals(department))
@@ -28,7 +28,7 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public Employee EmpWithMinSalaryByDepartment(int departmentNumber) {
+    public Employee empWithMinSalaryByDepartment(int departmentNumber) {
         Department department = getDepartmentByNumber(departmentNumber);
         return repository.findAll().stream()
                 .filter(e -> e.getDepartment().equals(department))
